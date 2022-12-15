@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="04bbefad-e87e-4a6d-9dc1-d577a49a5653" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codestates/section2week4/coffee/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codestates/section2week4/coffee/Coffee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,18 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,10 +51,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/yong/Desktop/codestates/spring_project/section2-week4/build.gradle"
+    "last_opened_file_path": "C:/Users/yuy08/Documents/GitHub/bootcamp/spring_project/section3-week1",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CoffeeTest">
+  <component name="RunManager" selected="Gradle.Section2Week4ApplicationTests">
     <configuration name="CoffeeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.codestates.section2week4.coffee.CoffeeTest" />
       <module name="section2-week4.main" />
@@ -70,8 +82,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Section2Week4ApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.codestates.section2week4.Section2Week4ApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Section2Week4ApplicationTests" />
         <item itemvalue="Application.CoffeeTest" />
         <item itemvalue="Application.MemberTest" />
       </list>
