@@ -1,23 +1,23 @@
-package com.codestates.section2week4.coffee;
+package com.codestates.section2week4.Coffee;
 
 public class Coffee {
-    private long coffeeId;
+    private Long coffeeId;
     private String korName;
     private String engName;
     private int price;
 
-    public Coffee(long coffeeId, String korName, String engName, int price) {
+    public Coffee(Long coffeeId, String korName, String engName, int price) {
         this.coffeeId = coffeeId;
         this.korName = korName;
         this.engName = engName;
         this.price = price;
     }
 
-    public long getCoffeeId() {
+    public Long getCoffeeId() {
         return coffeeId;
     }
 
-    public void setCoffeeId(long coffeeId) {
+    public void setCoffeeId(Long coffeeId) {
         this.coffeeId = coffeeId;
     }
 

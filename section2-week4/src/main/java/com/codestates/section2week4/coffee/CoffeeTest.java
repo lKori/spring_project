@@ -1,10 +1,20 @@
-package com.codestates.section2week4.coffee;
+package com.codestates.section2week4.Coffee;
+
+import com.codestates.section2week4.DependencyConfig;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class CoffeeTest {
     public static void main(String[] args) {
-        CoffeeService coffeeService = new CoffeeService();
+        ApplicationContext ac = new AnnotationConfigApplicationContext(DependencyConfig.class);
+        CoffeeService coffeeService = ac.getBean("coffeeService", CoffeeService.class);
 
-        Coffee coffee = new Coffee(0L, "바닐라 라떼", "vanilla latte", 5000);
+        Coffee coffee = new Coffee(
+                0L,
+                "바닐라 라떼",
+                "vanilla latte",
+                5000
+        );
         coffeeService.createCoffee(coffee);
 
         if(coffeeService.getCoffee(0L).getKorName().equals(coffee.getKorName())) {

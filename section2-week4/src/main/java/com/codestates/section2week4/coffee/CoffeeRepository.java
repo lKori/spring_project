@@ -1,8 +1,11 @@
-package com.codestates.section2week4.coffee;
+package com.codestates.section2week4.Coffee;
+
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class CoffeeRepository {
     private static Map<Long, Coffee> drinks = new HashMap<>();
 
@@ -10,7 +13,7 @@ public class CoffeeRepository {
         drinks.put(coffee.getCoffeeId(), coffee);
     }
 
-    public Coffee patchCoffee(long coffeeId, String korName, int price) {
+    public Coffee patchCoffee(Long coffeeId, String korName, int price) {
         Coffee drink = drinks.get(coffeeId);
         drink.setKorName(korName);
         drink.setPrice(price);
@@ -18,11 +21,11 @@ public class CoffeeRepository {
         return drinks.put(coffeeId, drink);
     }
 
-    public Coffee getCoffee(long coffeeId) {
+    public Coffee getCoffee(Long coffeeId) {
         return drinks.get(coffeeId);
     }
 
-    public void deleteCoffee(long coffeeId) {
+    public void deleteCoffee(Long coffeeId) {
         drinks.remove(coffeeId);
     }
 }

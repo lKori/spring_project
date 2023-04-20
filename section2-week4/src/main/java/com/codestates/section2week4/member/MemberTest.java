@@ -1,10 +1,20 @@
-package com.codestates.section2week4.member;
+package com.codestates.section2week4.Member;
+
+import com.codestates.section2week4.DependencyConfig;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MemberTest {
-    public static void main(String[] agrs) {
-        MemberService memberService = new MemberService();
+    public static void main(String[] args) {
+        ApplicationContext ac = new AnnotationConfigApplicationContext(DependencyConfig.class);
+        MemberService memberService = ac.getBean("memberService", MemberService.class);
 
-        Member member = new Member(0L, "lucky@codestates.com", "KimLucky", "010-1234-5678");
+        Member member = new Member(
+                0L,
+                "lucky@codesates.com",
+                "KimLucky",
+                "010-1234-5678"
+        );
         memberService.createMember(member);
 
         Member currentMember = memberService.getMember(0L);

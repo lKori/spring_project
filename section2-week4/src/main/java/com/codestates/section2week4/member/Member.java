@@ -1,4 +1,4 @@
-package com.codestates.section2week4.member;
+package com.codestates.section2week4.Member;
 
 public class Member {
     private Long memberId;
@@ -6,19 +6,18 @@ public class Member {
     private String name;
     private String phone;
 
-    // 생성자
-    public Member(Long memberId, String email, String name, String phone) {
+    public Member(long memberId, String email, String name, String phone) {
         this.memberId = memberId;
         this.email = email;
         this.name = name;
         this.phone = phone;
     }
 
-    public Long getMemberId() {
+    public long getMemberId() {
         return memberId;
     }
 
-    public void setMemberId(Long memberId) {
+    public void setMemberId(long memberId) {
         this.memberId = memberId;
     }
 
